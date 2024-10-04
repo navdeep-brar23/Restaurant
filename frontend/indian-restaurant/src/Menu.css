@@ -1,0 +1,134 @@
+/* Menu.css */
+
+/* Container for the menu */
+.menu-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+/* User and Cart button container */
+.user-cart-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute; /* Positioning absolute for top right */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+}
+
+/* Hamburger button */
+.hamburger-btn {
+  position: left; /* Absolute positioning */
+  top: 10px; /* Distance from the top */
+  left: 10px; /* Distance from the left */
+  /* Ensure it appears above other elements */
+}
+
+/* Title styling */
+h2 {
+  text-align: center;
+  margin-bottom: 40px; /* Add space below the title */
+}
+
+/* Offcanvas menu styles */
+.offcanvas {
+  width: 250px; /* Width of the offcanvas */
+}
+
+.offcanvas-header {
+  background-color: #007bff; /* Header background color */
+  color: white; /* Text color for header */
+}
+
+.offcanvas-title {
+  text-align: center;
+}
+
+/* Button styling */
+.btn-block {
+  width: 100%; /* Full width buttons */
+}
+
+/* Menu items styling */
+.card {
+  border: none; /* Remove border from cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 10px; /* Rounded corners for modal */
+}
+
+/* Quantity input styling */
+input[type="number"] {
+  width: 100%; /* Full width for quantity input */
+}
+
+/* Cart button styles */
+#cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red; /* Notification color */
+  color: white; /* Text color for notification */
+  border-radius: 50%;
+  padding: 3px 7px; /* Padding for the badge */
+  font-size: 0.8em; /* Font size for the badge */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-container {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .card {
+      margin-bottom: 20px; /* Add spacing between cards */
+  }
+
+  .hamburger-btn {
+      left: 5px; /* Adjust position */
+  }
+}
+.menu-container {
+  position: relative;
+}
+
+.hamburger-btn {
+  position: fixed; /* Fix the button to the left */
+  top: 20px;      /* Space from the top */
+  left: 20px;     /* Space from the left */
+  z-index: 10;    /* Ensure it is above other elements */
+}
+
+.user-cart-container {
+  position: fixed; /* Fix the container to the top right */
+  top: 20px;      /* Space from the top */
+  right: 20px;    /* Space from the right */
+  z-index: 10;    /* Ensure it is above other elements */
+}
+
+/* Flex container for the dishes */
+.dish-container {
+  display: flex;             /* Enable flexbox */
+  flex-wrap: wrap;          /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly */
+  margin-top: 20px;         /* Space above the dishes */
+}
+
+/* Individual dish card styling */
+.dish-card {
+  flex: 1 1 30%;            /* Allow cards to grow and shrink; set a base width of 30% */
+  margin: 10px;             /* Space between cards */
+}
+
